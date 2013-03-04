@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type="text/javascript" src="js/libs/underscore.js"></script>
+    <script type="text/javascript" src="js/libs/gnd.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/libs/jquery-ui-1.10.1.custom.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.1.custom.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Juego de la vida</h1>
+      <div class="gnd-view">
+        <button class="btn" data-event="click: board.stepIn">Paso adelante</button>
+        <button class="btn" data-event="click: board.play">Play</button>
+        <button class="btn" data-event="click: board.stop">Stop</button>
+        <button class="btn" data-event="click: board.fillRandom">Llenar aleatoriamente</button>
+        <button class="btn" data-event="click: board.empty">Vaciar</button>
+        </br>
+        <span>Set Speed</span>
+        <div id="slider" style="width: 100px;"></div>
+        </br>
+        <table>
+          <tbody class="content" bind-each="">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
